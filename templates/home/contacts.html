@@ -1,0 +1,66 @@
+{% extends "base/base-templates.html" %}
+{% load static %}
+{% block content %}
+
+<div class="content">
+  <div class="container_12">
+    <div class="grid_6">
+      <h2>Find Us</h2>
+      <div class="map">
+        <figure class="img_inner">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d976.6279458259121!2d78.1496506908129!3d26.175745399923777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3976c5e41de0481b%3A0xfd3ab5a0fbf296b4!2sDharmendra%20dairy!5e0!3m2!1sen!2sin!4v1627622605238!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </figure>
+        <address>
+          <dl>
+            <dt>
+              <p>The Company Name Inc.<br>
+                8901 Marmora Road,<br>
+                Glasgow, D04 89GR.</p>
+            </dt>
+            <dd><span>Freephone:</span>+1 800 559 6580</dd>
+            <dd><span>Telephone:</span>+1 800 603 6035</dd>
+            <dd><span>FAX:</span>+1 800 889 9898</dd>
+          </dl>
+        </address>
+      </div>
+    </div>
+    <div class="grid_5 prefix_1">
+      <h2>Contact Us</h2>
+
+      <form action="" method="POST">
+        <div class="success_wrapper">
+          <div class="success">Contact form submitted!<br>
+            <strong>We will be in touch soon.</strong>
+          </div>
+        </div>
+        <fieldset>
+          <label class="name">
+            <input type="text" name="name" placeholder="Name:">
+            <br class="clear">
+            <span class="error error-empty">*This is not a valid name.</span><span class="empty error-empty">*This
+              field is required.</span> </label>
+          <label class="email">
+            <input type="text" name="email" placeholder="E-mail:">
+            <br class="clear">
+            <span class="error error-empty">*This is not a valid email address.</span><span
+              class="empty error-empty">*This field is required.</span> </label>
+          <label class="phone">
+            <input type="tel" name="phone" placeholder="Phone:">
+            <br class="clear">
+            <span class="error error-empty">*This is not a valid phone number.</span><span
+              class="empty error-empty">*This field is required.</span> </label>
+          <label class="message">
+            <textarea name="message">Message:</textarea>
+            <br class="clear">
+            <span class="error">*The message is too short.</span> <span class="empty">*This field is required.</span>
+          </label>
+          <div class="clear"></div>
+          <div class="btns"><a data-type="reset" class="btn">clear</a><a data-type="submit" class="btn">send</a>
+            <div class="clear"></div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+{% endblock %}
